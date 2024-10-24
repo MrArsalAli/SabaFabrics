@@ -32,7 +32,7 @@ function Cart() {
           }),
         });
         console.log("updated");
-        navigate("/")
+        navigate("/");
       } else {
         await setDoc(userOrdersRef, {
           items: [
@@ -43,7 +43,7 @@ function Cart() {
           ],
         });
         console.log("New order recieved");
-        navigate("/")
+        navigate("/");
       }
     } catch (error) {
       alert(error);
@@ -92,7 +92,7 @@ function Cart() {
           <Button
             onClick={() => {
               if (currentUser) {
-                // handleWhatsappMsg();
+                handleWhatsappMsg();
                 handleFirestore(cartItems, currentUser.uid);
               } else {
                 navigate("/signup");
