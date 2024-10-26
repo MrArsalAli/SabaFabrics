@@ -22,9 +22,8 @@ function Hero() {
       </div>
 
       {/* cards */}
-      <p className="text-center text-2xl mt-4 poppins-bold">
-        {" "}
-        - SHOP BY CATEGORY -{" "}
+      <p className="text-center text-2xl mt-4 poppins-bold category-heading">
+        - SHOP BY CATEGORY -
       </p>
       <div className="grid grid-cols-5 gap-2 px-2 mt-1 poppins-semibold">
         <div>
@@ -79,29 +78,29 @@ function Hero() {
       <div className="grid grid-cols-2 gap-1 mt-4 px-2">
         <div>
           <img
-            className="h-full max-w-full"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+            className="h-svh w-full"
+            src="https://plus.unsplash.com/premium_photo-1672323894599-6c9e31c67baf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dWx0cmElMjBoZCUyMGZhYnJpY3N8ZW58MHx8MHx8fDA%3D"
             alt=""
           />
         </div>
         <div>
           <img
-            className="h-full max-w-full"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+            className="h-svh w-full"
+            src="https://images.pexels.com/photos/2096624/pexels-photo-2096624.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />
         </div>
         <div>
           <img
-            className="h-full max-w-full"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+            className="h-svh w-full"
+            src="https://images.pexels.com/photos/1487703/pexels-photo-1487703.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />
         </div>
         <div>
           <img
-            className="h-full max-w-full"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+            className="h-svh w-full"
+            src="https://images.pexels.com/photos/1487809/pexels-photo-1487809.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />
         </div>

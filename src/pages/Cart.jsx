@@ -98,7 +98,7 @@ function Cart() {
                 navigate("/signup");
               }
             }}
-            text={"Checkout To Proceed"}
+            text={"Proceed To Checkout"}
             disabled={cartItems.length === 0}
           />
         </div>

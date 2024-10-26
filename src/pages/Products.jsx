@@ -24,10 +24,7 @@ function Products() {
         <div className="flex justify-center my-8">
         <Pagination
         defaultCurrent={1}
-        // total={50}
-        // pageSize={limit}
-        // onChange={(num) => setSkip((num - 1) * limit)}
-        // onShowSizeChange={(pageSize) => setLimit(pageSize)}
+        total={50}
         />
       </div>
       </div>

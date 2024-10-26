@@ -48,11 +48,17 @@ function ProductDetail() {
 
               <div className="flex justify-center mt-16">
                 {/* Commented for Now  */}
-                {/* <div className="flex mx-4">
-                <PlusCircleOutlined onClick={() => addCartItem(data)} className="text-2xl text-emerald-400 cursor-pointer" />
-                <p className="mx-4 text-2xl"> Quantity </p>
-                <MinusCircleOutlined onClick={() => lessQuantityFromCart(data.id)} className="text-2xl text-emerald-400 cursor-pointer" />
-              </div> */}
+                <div className="flex mx-4">
+                  <PlusCircleOutlined
+                    onClick={() => addCartItem(data)}
+                    className="text-2xl text-emerald-400 cursor-pointer"
+                  />
+                  <p className="mx-4 text-2xl"> Quantity </p>
+                  <MinusCircleOutlined
+                    onClick={() => lessQuantityFromCart(data.id)}
+                    className="text-2xl text-emerald-400 cursor-pointer"
+                  />
+                </div>
                 <div className="w-1/2 mx-auto">
                   <Button
                     onClick={() => addCartItem(products)}
