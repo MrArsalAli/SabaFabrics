@@ -46,4 +46,17 @@ body {
   transform: scale(1.4); /* Increases the size by 20% */
 }
 
+/* titleClass */
+.title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
+/* footer media query */
+@media (max-width: 768px) {
+  .footer-mdq{
+    font-size: 12px;
+    gap: 4;
+  }
+}

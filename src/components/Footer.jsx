@@ -5,7 +5,7 @@ import { MailOutlined, PhoneOutlined } from '@ant-design/icons'
 export default function Footer() {
     return (
         <>
-        <footer className="p-4 mt-8 bg-emerald-100 sm:p-6 dark:bg-gray-800">
+        <footer className="p-4 mt-8 bg-emerald-100 dark:bg-gray-800 footer-mdq">
             <div className="mx-auto max-w-screen-xl">
                 <div className="flex justify-between">
                     <div className="flex flex-col mb-6 md:mb-0">
@@ -28,13 +28,13 @@ export default function Footer() {
                         <p className="font-bold p-3">0340-2196848</p>
                         </span>
                     </div>
-                    <div className="grid grid-cols-3 gap-14">
+                    <div className="grid grid-cols-3 gap-14 md:gap-1">
                         <div>
-                            <h2 className="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white">
+                            <h2 className="mb-6 text-md font-bold text-gray-900 uppercase md:mb-2">
                                 Shop
           </h2>
                             <ul className="text-gray-900 dark:text-gray-400">
-                                <li className="mb-4">
+                                <li className="mb-4 md:mb-2">
                                     <a href="https://flowbite.com" className="hover:text-gray-900 hover:font-medium">
                                         New Arrivals
               </a>
@@ -47,11 +47,11 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white">
+                            <h2 className="mb-6 text-md font-bold text-gray-900 uppercase md:mb-2">
                                 Information
           </h2>
                             <ul className="text-gray-900 dark:text-gray-400">
-                                <li className="mb-4">
+                                <li className="mb-4 md:mb-2">
                                     <a
                                         href="https://github.com/themesberg/flowbite"
                                         className="hover:text-gray-900 hover:font-medium"
@@ -70,11 +70,11 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white">
+                            <h2 className="mb-6 text-md font-bold text-gray-900 uppercase md:mb-2">
                                 Customer Service
           </h2>
                             <ul className="text-gray-900 dark:text-gray-400">
-                                <li className="mb-4">
+                                <li className="mb-4 md:mb-2">
                                     <a href="#" className="hover:text-gray-900 hover:font-medium">
                                         Exchange &amp; Return
               </a>
@@ -88,7 +88,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <hr className="border-gray-300 sm:mx-auto dark:border-gray-700 lg:my-4" />
+                <hr className="border-gray-300 sm:mx-auto dark:border-gray-700  md:mb-2" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
                         © 2024{" "}

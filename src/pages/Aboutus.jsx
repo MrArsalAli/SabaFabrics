@@ -18,8 +18,8 @@ export default function Aboutus() {
         </div>
       </div>
       <div className="container mx-auto mt-4">
-        <h3 className="text-xl font-semibold ">Who We Are?</h3>
-        <p className="my-2">
+        <h3 className="text-xl font-semibold md:text-lg">Who We Are?</h3>
+        <p className="my-2 md:text-sm">
           SabaFabrics is dedicated to delivering premium unstitched fabrics that
           combine timeless elegance with contemporary style. Since our
           inception, we have strived to bring the finest quality textiles to our
