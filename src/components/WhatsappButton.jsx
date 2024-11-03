@@ -9,7 +9,7 @@ function WhatsappButton() {
         data-dial-toggle="speed-dial-menu-bottom-left"
         aria-controls="speed-dial-menu-bottom-left"
         aria-expanded="false"
-        className="flex items-center justify-center rounded-full w-14 h-14 md:w-10 md:h-10"
+        className="flex items-center justify-center rounded-full w-14 h-14"
       >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"

@@ -8,11 +8,11 @@ function Productcard({ data }) {
     <>
       <div onClick={() => navigate(`/products/${id}`)}>
         <img
-          className="bg-emerald-50 h-96 max-w-full cursor-pointer md:h-64"
+          className="bg-emerald-50 h-96 max-w-full cursor-pointer"
           src={thumbnail}
           alt=""
         />
-        <p className="mt-2 font-semibold text-gray-700 dark:text-gray-400 md:mt-1 title">
+        <p className="font-medium text-gray-700 dark:text-gray-400 title">
           {title}
         </p>
         <p className="text-gray-400">PKR : {price}</p>

@@ -16,7 +16,7 @@ function Products() {
   return (
     <>
       <div className="mx-auto mt-16">
-        <div className="grid grid-cols-5 gap-2 px-2 mt-1">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 px-2 mt-1">
           {products.map((data) => (
             <Productcard data={data} key={data.id} />
           ))}

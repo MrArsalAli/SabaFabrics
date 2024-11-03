@@ -3,9 +3,9 @@ import React from "react";
 export default function Aboutus() {
   return (
     <>
-      <div className="relative w-full mt-8">
+      <div className="relative w-full md:mt-8">
         <div
-          className="relative h-56 overflow-hidden md:h-96"
+          className="relative overflow-hidden md:h-96 h-56"
           style={{ height: 480 }}
         >
           <div className="">
@@ -17,9 +17,9 @@ export default function Aboutus() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-4">
-        <h3 className="text-xl font-semibold md:text-lg">Who We Are?</h3>
-        <p className="my-2 md:text-sm">
+      <div className="container mx-auto mt-4 lg:container lg:mx-auto lg:mt-4 md:contianer md:mx-auto md:mt-2">
+        <h3 className="text-xl font-semibold">Who We Are?</h3>
+        <p className="my-2 font-light">
           SabaFabrics is dedicated to delivering premium unstitched fabrics that
           combine timeless elegance with contemporary style. Since our
           inception, we have strived to bring the finest quality textiles to our
