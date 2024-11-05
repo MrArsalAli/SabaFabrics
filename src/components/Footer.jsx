@@ -1,6 +1,12 @@
 import React from "react";
 import "../App.css";
-import { FacebookOutlined, InstagramOutlined, MailOutlined, PhoneOutlined, TwitterOutlined } from "@ant-design/icons";
+import {
+  FacebookOutlined,
+  InstagramOutlined,
+  MailOutlined,
+  PhoneOutlined,
+  TwitterOutlined,
+} from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -11,28 +17,32 @@ export default function Footer() {
           <div className="flex justify-between">
             <div className="flex flex-col mb-6 md:mb-0">
               <span className="flex">
-                <MailOutlined  className="text-xl md:text-3xl py-2" />
-                <p className="text-sm font-semibold md:text-lg md:font-bold p-3">customercare@sabafabrics.com</p>
+                <MailOutlined className="text-xl md:text-3xl py-2" />
+                <p className="text-sm font-semibold md:text-lg md:font-bold p-3">
+                  customercare@sabafabrics.com
+                </p>
               </span>
               <span className="flex">
-                <PhoneOutlined  className="text-xl md:text-3xl py-2" />
-                <p className="text-sm font-semibold md:text-lg md:font-bold p-3">0340-2196848</p>
+                <PhoneOutlined className="text-xl md:text-3xl py-2" />
+                <p className="text-sm font-semibold md:text-lg md:font-bold p-3">
+                  0340-2196848
+                </p>
               </span>
             </div>
             <div className="flex justify-center items-center lg:hidden">
-            <span
-            onClick={() => navigate("/")}
-            className="flex items-center  cursor-pointer"
-          >
-            <img
-              src="https://img.freepik.com/premium-vector/clean-ecommerce-website-logo_741109-36.jpg?ga=GA1.1.992465823.1728379062&semt=ais_hybrid"
-              className="h-8"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-2xl md:text-4xl whitespace-nowrap dark:text-white protest-strike-regular">
-              SabaFab
-            </span>
-          </span>
+              <span
+                onClick={() => navigate("/")}
+                className="flex items-center  cursor-pointer"
+              >
+                <img
+                  src="https://img.freepik.com/premium-vector/clean-ecommerce-website-logo_741109-36.jpg?ga=GA1.1.992465823.1728379062&semt=ais_hybrid"
+                  className="h-8"
+                  alt="Flowbite Logo"
+                />
+                <span className="self-center text-2xl md:text-4xl whitespace-nowrap dark:text-white protest-strike-regular">
+                  SabaFab
+                </span>
+              </span>
             </div>
             <div className="hidden md:hidden lg:grid lg:grid-cols-3 gap-12">
               <div>
@@ -108,26 +118,23 @@ export default function Footer() {
           </div>
 
           <hr className="border-gray-300 sm:mx-auto dark:border-gray-700  md:mb-2" />
-          <div className="sm:flex sm:items-center sm:justify-between">
+          <div className="flex justify-center md:items-center md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2024{" "}
-              <a
-                href="https://flowbite.com"
-                className="hover:text-gray-900 hover:font-medium"
-              >
+              <Link to={"/"} className="hover:text-gray-900 hover:font-medium">
                 SABAFAB™
-              </a>
+              </Link>
               . All Rights Reserved.
             </span>
-            <div className="flex gap-2 space-x-6 sm:justify-center sm:mt-0">
+            <div className="hidden lg:flex md:flex lg:gap-8 md:gap-4">
               <Link>
-              <FacebookOutlined className="text-gray-500 hover:text-gray-900 hover:font-bold dark:hover:text-white" />
+                <FacebookOutlined className="text-gray-500 hover:text-gray-900 hover:font-bold dark:hover:text-white" />
               </Link>
               <Link>
-              <InstagramOutlined className="text-gray-500 hover:text-gray-900 hover:font-bold dark:hover:text-white" />
+                <InstagramOutlined className="text-gray-500 hover:text-gray-900 hover:font-bold dark:hover:text-white" />
               </Link>
               <Link>
-              <TwitterOutlined className="text-gray-500 hover:text-gray-900 hover:font-bold dark:hover:text-white" />
+                <TwitterOutlined className="text-gray-500 hover:text-gray-900 hover:font-bold dark:hover:text-white" />
               </Link>
             </div>
           </div>
