@@ -53,10 +53,4 @@ body {
   text-overflow: ellipsis;
 }
 
-/* footer media query */
-@media (max-width: 768px) {
-  .footer-mdq{
-    font-size: 12px;
-    gap: 4;
-  }
-}
+
