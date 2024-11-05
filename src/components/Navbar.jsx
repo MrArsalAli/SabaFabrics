@@ -34,7 +34,7 @@ function Navbar() {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between md:p-4 w-8/12 md:w-7/12">
           <span
             onClick={() => navigate("/")}
-            className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer"
+            className="flex items-center cursor-pointer"
           >
             <img
               src="https://img.freepik.com/premium-vector/clean-ecommerce-website-logo_741109-36.jpg?ga=GA1.1.992465823.1728379062&semt=ais_hybrid"
