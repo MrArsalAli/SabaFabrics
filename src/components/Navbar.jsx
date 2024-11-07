@@ -29,7 +29,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-gray-200">
       <div className="flex justify-end">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between md:p-4 w-8/12 md:w-7/12">
           <span
@@ -69,14 +69,14 @@ function Navbar() {
               />
             </svg>
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
+          <div className="hidden w-full md:block md:w-auto">
+            <ul className="flex gap-6">
+              {/* <li>
                 <SearchOutlined
                   style={{ fontSize: 22 }}
                   className="inline-flex items-center cursor-pointer border-0 py-1 focus:outline-none rounded text-base mt-4 md:mt-0 icon"
                 />
-              </li>
+              </li> */}
               <li>
                 {currentUser ? (
                   <Button onClick={() => handleSignout()} text={"Logout"} />
@@ -84,7 +84,7 @@ function Navbar() {
                   <UserOutlined
                     onClick={() => navigate("/signup")}
                     style={{ fontSize: 22 }}
-                    className="inline-flex items-center cursor-pointer border-0 py-1 focus:outline-none rounded text-base mt-4 md:mt-0 icon"
+                    className="cursor-pointer icon"
                   />
                 )}
               </li>
@@ -93,7 +93,7 @@ function Navbar() {
                   <ShoppingOutlined
                     onClick={() => navigate("/cart")}
                     style={{ fontSize: 22 }}
-                    className="inline-flex items-center cursor-pointer border-0 py-1 focus:outline-none rounded text-base mt-4 md:mt-0 icon"
+                    className="cursor-pointer icon"
                   />
                 </Badge>
               </li>
@@ -101,51 +101,45 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <hr className="border-gray-300 dark:border-gray-700" />
-      <div className="hidden w-full p-3 md:block md:w-auto" id="navbar-default">
-        <ul className="flex flex-col justify-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <hr className="border-gray-300" />
+      <div className="hidden w-full p-2 md:block md:w-auto">
+        <ul className="flex justify-center gap-8">
           <li
             onClick={() => navigate("newarrivals")}
-            className="block py-2 px-3 text-lg font-semibold text-gray-900 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 
-              "
+            className="text-lg font-semibold text-gray-900 cursor-pointer hover:text-emerald-300"
           >
             NEW ARRIVALS
           </li>
           <li
             onClick={() => navigate("fabric")}
-            className="block py-2 px-3 text-lg font-semibold text-gray-900 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 
-              "
+            className="text-lg font-semibold text-gray-900 cursor-pointer hover:text-emerald-300"
           >
             FABRIC
           </li>
           <li
             onClick={() => navigate("products")}
-            className="block py-2 px-3 text-lg font-semibold text-gray-900 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 
-              "
+            className="text-lg font-semibold text-gray-900 cursor-pointer hover:text-emerald-300"
           >
             PRODUCTS
           </li>
           <li
             onClick={() => navigate("contact")}
-            className="block py-2 px-3 text-lg font-semibold text-gray-900 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
-              "
+            className="text-lg font-semibold text-gray-900 cursor-pointer hover:text-emerald-300"
           >
             CONTACT
           </li>
           <li
             onClick={() => navigate("aboutus")}
-            className="block py-2 px-3 text-lg font-semibold text-gray-900 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
-              "
+            className="text-lg font-semibold text-gray-900 cursor-pointer hover:text-emerald-300"
           >
             ABOUT US
           </li>
-          {/* <li
+          <li
             onClick={() => navigate("sale")}
-            className="block py-2 px-3 text-lg font-semibold text-emerald-600 rounded cursor-pointer hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
-              "
+            className="text-lg font-semibold text-emerald-600 cursor-pointer hover:text-emerald-300"
           >
-            MY PRODUCTS
-          </li> */}
+            SALE
+          </li>
         </ul>
       </div>
     </nav>
