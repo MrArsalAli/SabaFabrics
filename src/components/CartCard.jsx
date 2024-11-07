@@ -19,7 +19,7 @@ function CartCard() {
         >
           <div className="w-1/5">
             <img
-              className="h-44 w-60 mx-auto my-6 rounded-lg"
+              className="h-44 w-60 mx-auto my-6 rounded-none"
               src={data.thumbnail}
               alt=""
             />

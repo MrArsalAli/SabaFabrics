@@ -14,7 +14,7 @@ function Hero() {
           <div>
             <img
               src="https://images.pexels.com/photos/7641148/pexels-photo-7641148.jpeg?auto=compress&cs=tinysrgb&w=600"
-              className="block w-full"
+              className="w-full"
               alt="SabaFab"
             />
           </div>
@@ -86,28 +86,28 @@ function Hero() {
           <img
             className="w-full h-52 md:h-96 lg:h-svh"
             src="https://plus.unsplash.com/premium_photo-1672323894599-6c9e31c67baf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dWx0cmElMjBoZCUyMGZhYnJpY3N8ZW58MHx8MHx8fDA%3D"
-            alt=""
+            alt="SabaFab"
           />
         </div>
         <div>
           <img
             className="w-full h-52 md:h-96 lg:h-svh"
             src="https://images.pexels.com/photos/2096624/pexels-photo-2096624.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
+            alt="SabaFab"
           />
         </div>
         <div>
           <img
             className="w-full h-52 md:h-96 lg:h-svh"
             src="https://images.pexels.com/photos/1487703/pexels-photo-1487703.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
+            alt="SabaFab"
           />
         </div>
         <div>
           <img
             className="w-full h-52 md:h-96 lg:h-svh"
             src="https://images.pexels.com/photos/1487809/pexels-photo-1487809.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
+            alt="SabaFab"
           />
         </div>
       </div>
