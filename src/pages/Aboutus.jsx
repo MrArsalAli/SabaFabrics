@@ -6,7 +6,7 @@ export default function Aboutus() {
       <div className="relative w-full md:mt-8">
         <div
           className="relative overflow-hidden md:h-96 h-56"
-          style={{ height: 480 }}
+          // style={{ height: 480 }}
         >
           <div className="">
             <img

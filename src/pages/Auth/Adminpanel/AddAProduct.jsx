@@ -6,8 +6,7 @@ import { addDoc, doc, collection } from "firebase/firestore";
 import { useNavigate } from "react-router";
 
 function AddAProduct() {
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   const [productImage, setProductImage] = useState(null);
   const [productTitle, setProductTitle] = useState("");
@@ -15,7 +14,7 @@ function AddAProduct() {
 
   const handleImage = (e) => {
     console.log(e.target.files[0]);
-    
+
     // if (e.target.files[0]) {
     //   setProductImage(e.target.files[0]);
     // }
@@ -26,25 +25,25 @@ function AddAProduct() {
 
     // if (!productImage) return alert("Upload An Image");
 
-  //   const imgRef = ref(storage, productImage.name);
-  //   uploadBytes(imgRef, productImage)
-  //     .then(() => {
-  //       console.log("File Uploaded");
-  //       getDownloadURL(imgRef)
-  //         .then((url) => {
-  //           console.log("URL", url);
-  //           productImage = url;
-  //           const userProductCollection = collection(db, "userProducts");
-  //           addDoc(userProductCollection, productImage)
-  //             .then((doc) => {
-  //               console.log("Document Added");
-  //               navigate("/")
-  //             })
-  //             .catch(() => {});
-  //         })
-  //         .catch(() => {});
-  //     })
-  //     .catch(() => {});
+    //   const imgRef = ref(storage, productImage.name);
+    //   uploadBytes(imgRef, productImage)
+    //     .then(() => {
+    //       console.log("File Uploaded");
+    //       getDownloadURL(imgRef)
+    //         .then((url) => {
+    //           console.log("URL", url);
+    //           productImage = url;
+    //           const userProductCollection = collection(db, "userProducts");
+    //           addDoc(userProductCollection, productImage)
+    //             .then((doc) => {
+    //               console.log("Document Added");
+    //               navigate("/")
+    //             })
+    //             .catch(() => {});
+    //         })
+    //         .catch(() => {});
+    //     })
+    //     .catch(() => {});
   };
 
   return (
@@ -71,7 +70,7 @@ function AddAProduct() {
                     onChange={handleImage}
                     id="image"
                     name="image"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-medium rounded focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded focus:ring-emerald-500 focus:border-emerald-500 w-full p-2.5"
                   />
                 </div>
 
@@ -88,7 +87,7 @@ function AddAProduct() {
                     onChange={(e) => setProductTitle(e.target.value)}
                     id="title"
                     name="title"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-medium rounded focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded focus:ring-emerald-500 focus:border-emerald-500 w-full p-2.5"
                   />
                 </div>
                 <div className="mb-4">
@@ -104,7 +103,7 @@ function AddAProduct() {
                     onChange={(e) => setProductPrice(e.target.value)}
                     id="price"
                     name="price"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-medium rounded focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded focus:ring-emerald-500 focus:border-emerald-500 w-full p-2.5"
                   />
                 </div>
                 <div className="flex items-center justify-between">
